@@ -3,22 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Le Bureau - Restaurant & Lounge Taza</title>
+<title>Restaurant Al-Mandar - مطعم المندار تازة</title>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
-:root{--gold:#D4AF37;--dark:#0f0f0f;--dark2:#1a1a1a}
+:root{--gold:#D4AF37;--dark:#0F0F0F;--dark2:#1a1a1a}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Tajawal',sans-serif;background:var(--dark);color:#fff}
 h1,h2{font-family:'Playfair Display',serif}
-.navbar{position:fixed;top:0;width:100%;background:rgba(15,15,15,0.95);backdrop-filter:blur(10px);z-index:1000;padding:15px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(212,175,55,0.2)}
+.navbar{position:fixed;top:0;width:100%;background:rgba(15,15,15,0.95);backdrop-filter:blur(10px);z-index:1000;padding:12px 5%;display:flex;justify-content:space-between;align-items:center}
 .logo{font-size:24px;font-weight:800;color:var(--gold)}
-.lang-switch{display:flex;gap:5px;background:#222;border-radius:20px;padding:4px}
-.lang-btn{padding:5px 12px;border-radius:15px;border:none;background:transparent;color:#aaa;cursor:pointer;font-size:12px;font-weight:700}
-.lang-btn.active{background:var(--gold);color:#000}
-.hero{height:100vh;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80') center/cover;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
-.hero h1{font-size:70px;color:var(--gold);margin-bottom:15px}
-.hero p{font-size:18px;max-width:600px;line-height:1.7;margin-bottom:25px;color:#ddd}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200');background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+.hero h1{font-size:52px;color:var(--gold);margin-bottom:15px}
+.hero p{font-size:18px;max-width:650px;line-height:1.7;margin-bottom:25px;color:#ddd}
 .btn-gold{background:var(--gold);color:#000;padding:14px 35px;border-radius:30px;font-weight:800;text-decoration:none;display:inline-block}
 .section{padding:70px 5%}
 .section-title{text-align:center;font-size:36px;color:var(--gold);margin-bottom:40px}
@@ -30,77 +27,53 @@ h1,h2{font-family:'Playfair Display',serif}
 .qr-section{background:var(--dark2);text-align:center;border-top:1px solid rgba(212,175,55,0.1);border-bottom:1px solid rgba(212,175,55,0.1)}
 .qr-box{background:#fff;padding:20px;border-radius:15px;display:inline-block;margin:20px 0}
 .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;text-align:center;margin-top:20px}
-.contact-item i{font-size:30px;color:var(--gold);margin-bottom:12px}
-.whatsapp-float{position:fixed;bottom:25px;right:25px;background:#25D366;width:65px;height:65px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:32px;color:#fff;z-index:999;box-shadow:0 4px 15px rgba(0,0,0,0.4);text-decoration:none;animation:pulse 2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,0.7)}70%{box-shadow:0 0 0 15px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
-.footer{text-align:center;padding:30px;background:#080808;color:#666;font-size:13px}
+.contact-item i{font-size:32px;color:var(--gold);margin-bottom:12px}
+.whatsapp-float{position:fixed;bottom:25px;right:25px;background:#25D366;width:65px;height:65px;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:32px;color:#fff;text-decoration:none;z-index:1000;box-shadow:0 0 0 rgba(37,211,102,0.7);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,0.7)}70%{box-shadow:0 0 0 10px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+footer{text-align:center;padding:30px;background:#080808;color:#666;font-size:13px}
 </style>
 </head>
 <body>
 
-<a href="https://wa.me/212600000000?text=Salam%20bghit%20n7jez%20f%20Le%20Bureau" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<a href="https://wa.me/212600000000?text=Salam%20bghit%20n7jez%20f%20Al-Mandar" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
 <nav class="navbar">
-<div class="logo">Le BUREAU</div>
-<div class="lang-switch">
-<button class="lang-btn active" onclick="setLang('ar',this)">AR</button>
-<button class="lang-btn" onclick="setLang('fr',this)">FR</button>
-<button class="lang-btn" onclick="setLang('en',this)">EN</button>
-</div>
+<div class="logo">Al-MANDAR المندار</div>
 </nav>
 
 <section class="hero">
-<h1 id="hero-title">Le Bureau</h1>
-<p id="hero-sub">مطعم وصالون - تازة<br>تجربة طعام استثنائية في قلب تازا، أجواء راقية ومذاق لا ينسى</p>
-<a href="#menu" class="btn-gold" id="hero-btn">اكتشف قائمة الطعام</a>
+<h1>Restaurant Al-Mandar</h1>
+<p>مطعم و صالون - ترحب بكم عائلة المندار في تازة، أطباق راقية و مذاق يبقى في البال</p>
+<a href="#menu" class="btn-gold">اكتشف قائمتنا</a>
 </section>
 
 <section class="section" id="menu">
-<h2 class="section-title" id="menu-title">قائمتنا المميزة</h2>
+<h2 class="section-title">قائمتنا الشهية</h2>
 <div class="menu-grid">
-<div class="menu-card"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=500"><div class="menu-card-content"><h3>طاجين لحم <span class="price">120 DH</span></h3><p>لحم بلدي بالبرقوق واللوز</p></div></div>
-<div class="menu-card"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=500"><div class="menu-card-content"><h3>بيتزا Le Bureau <span class="price">85 DH</span></h3><p>بيتزا خاصة بالمطعم</p></div></div>
-<div class="menu-card"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=500"><div class="menu-card-content"><h3>مشاوي مشكلة <span class="price">140 DH</span></h3><p>كفتة، كباب، شيش طاووق</p></div></div>
-<div class="menu-card"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=500"><div class="menu-card-content"><h3>بان كيك فاخر <span class="price">55 DH</span></h3><p>فطور صباحي مميز</p></div></div>
+<div class="menu-card"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500"><div class="menu-card-content"><span class="price">85 DH</span><h3>طاجين لحم بالبرقوق</h3><p>لحم غنمي مع البرقوق و اللوز</p></div></div>
+<div class="menu-card"><img src="https://images.unsplash.com/photo-1555126634-323283e090fa?w=500"><div class="menu-card-content"><span class="price">120 DH</span><h3>كوسكوس ملكي</h3><p>كل جمعة - 7 خضاري و لحم</p></div></div>
+<div class="menu-card"><img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=500"><div class="menu-card-content"><span class="price">65 DH</span><h3>بسطيلة دجاج</h3><p>بسطيلة مقرمشة باللوز و القرفة</p></div></div>
+<div class="menu-card"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500"><div class="menu-card-content"><span class="price">45 DH</span><h3>شاي و حلويات</h3><p>أتاي مغربي و كعب غزال</p></div></div>
 </div>
 </section>
 
 <section class="section qr-section">
-<h2 class="section-title" id="qr-title">QR Code - اطلب مباشرة</h2>
-<p id="qr-sub">سكانر الكود باش تشوف المينو فتيليفونك</p>
-<div class="qr-box"><img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://professional7m7.github.io/restaurant-lounge-le-bureau-" alt="QR"></div>
+<h2 class="section-title">QR Code - اطلب مباشرة</h2>
+<p>سكانير الكود باش تشوف المينو فالتيليفون</p>
+<div class="qr-box"><img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://professional7m7.github.io/restaurant-lounge-le-bureau-"></div>
 <p style="color:var(--gold);margin-top:10px;word-break:break-all">professional7m7.github.io/restaurant-lounge-le-bureau-</p>
 </section>
 
 <section class="section">
-<h2 class="section-title" id="contact-title">تواصل معنا</h2>
+<h2 class="section-title">تواصل معنا</h2>
 <div class="contact-grid">
-<div class="contact-item"><i class="fas fa-map-marker-alt"></i><h3>العنوان</h3><p>شارع الحسن الثاني، تازة</p></div>
-<div class="contact-item"><i class="fas fa-phone"></i><h3>الهاتف</h3><p>+212 6 00 00 00 00</p></div>
-<div class="contact-item"><i class="fab fa-whatsapp"></i><h3>واتساب</h3><p><a href="https://wa.me/212600000000" style="color:var(--gold)">اضغط هنا للحجز</a></p></div>
+<div class="contact-item"><i class="fas fa-map-marker-alt"></i><h3>العنوان</h3><p>شارع الحسن الثاني، تازة العليا</p></div>
+<div class="contact-item"><i class="fas fa-phone"></i><h3>الهاتف</h3><p>06 00 00 00 00</p></div>
+<div class="contact-item"><i class="fas fa-clock"></i><h3>أوقات العمل</h3><p>كل يوم 12:00 - 23:00</p></div>
 </div>
 </section>
 
-<div class="footer">© 2026 Le Bureau Restaurant & Lounge - Taza | جميع الحقوق محفوظة</div>
+<footer>© 2026 Restaurant Al-Mandar Taza - جميع الحقوق محفوظة</footer>
 
-<script>
-const trans={
-ar:{heroTitle:"Le Bureau - المكتب",heroSub:"مطعم وصالون - تازا<br>تجربة طعام استثنائية في قلب تازا، أجواء راقية ومذاق لا ينسى",heroBtn:"اكتشف قائمة الطعام",menuTitle:"قائمتنا المميزة",qrTitle:"QR Code - اطلب مباشرة",qrSub:"سكانر الكود باش تشوف المينو فتيليفونك",contactTitle:"تواصل معنا"},
-fr:{heroTitle:"Le Bureau",heroSub:"Restaurant & Lounge - Taza<br>Une expérience culinaire exceptionnelle au cœur de Taza",heroBtn:"Découvrir le Menu",menuTitle:"Notre Menu",qrTitle:"QR Code - Commandez",qrSub:"Scannez pour voir le menu",contactTitle:"Contactez-nous"},
-en:{heroTitle:"Le Bureau",heroSub:"Restaurant & Lounge - Taza<br>An exceptional dining experience in the heart of Taza",heroBtn:"Discover Menu",menuTitle:"Our Special Menu",qrTitle:"QR Code - Order Now",qrSub:"Scan to view menu on your phone",contactTitle:"Contact Us"}
-};
-function setLang(l,el){
-document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));
-el.classList.add('active');
-document.getElementById('hero-title').innerHTML=trans[l].heroTitle;
-document.getElementById('hero-sub').innerHTML=trans[l].heroSub;
-document.getElementById('hero-btn').innerHTML=trans[l].heroBtn;
-document.getElementById('menu-title').innerHTML=trans[l].menuTitle;
-document.getElementById('qr-title').innerHTML=trans[l].qrTitle;
-document.getElementById('qr-sub').innerHTML=trans[l].qrSub;
-document.getElementById('contact-title').innerHTML=trans[l].contactTitle;
-document.documentElement.dir=l==='ar'?'rtl':'ltr';
-}
-</script>
 </body>
 </html>
